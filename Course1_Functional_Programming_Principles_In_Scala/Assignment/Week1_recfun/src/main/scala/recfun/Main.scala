@@ -21,13 +21,13 @@ object Main {
   /**
     * Exercise 2
     */
-  def balance(chars: List[Char]): Boolean = {
-    def balanced(chars: List[Char], open_count: Int): Boolean = {
-      if (open_count < 0) false
-      else if (chars.isEmpty) true
-      else if (chars.head == '(') balanced(chars.tail, open_count + 1)
-      else if (chars.head == ')') balanced(chars.tail, open_count - 1)
-      else balanced(chars.tail, open_count)
+ def balance(chars: List[Char]): Boolean = {
+    def balanced(chars: List[Char], openCount: Int): Boolean = {
+      if (openCount < 0) false
+      else if (chars.isEmpty) if (openCount == 0) true else false
+      else if (chars.head == '(') balanced(chars.tail, openCount + 1)
+      else if (chars.head == ')') balanced(chars.tail, openCount - 1)
+      else balanced(chars.tail, openCount)
     }
     balanced(chars, 0)
   }
