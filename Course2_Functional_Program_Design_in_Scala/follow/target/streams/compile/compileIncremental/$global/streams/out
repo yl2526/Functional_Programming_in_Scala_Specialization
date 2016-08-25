@@ -1,0 +1,31 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set()[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set(C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates$Wire.class, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates.class, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates$$anonfun$inverter$1.class, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates$$anonfun$andGate$1.class, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates$$anonfun$orGate2$1.class, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates$$anonfun$orGate$1.class, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates$$anonfun$Week3$Gates$$orAction$1$1.class, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates$$anonfun$orGate$2.class, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates$$anonfun$Week3$Gates$$andAction$1$1.class, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates$$anonfun$orGate2$2.class, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates$Wire$$anonfun$setSignal$1.class, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates$$anonfun$Week3$Gates$$invertAction$1$1.class, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates$$anonfun$probe$1.class, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates$$anonfun$andGate$2.class, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes\Week3\Gates$$anonfun$Week3$Gates$$orAction$2$1.class)[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set(C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\src\main\scala\Week3\Gates.scala)[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\src\main\scala\Week3\Gates.scala)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.8[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.8[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler cf83c3c, interfacing (CompilerInterface) with Scala compiler version 2.11.8[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	C:\Program Files\Java\jre1.8.0_101\lib\resources.jar;C:\Program Files\Java\jre1.8.0_101\lib\rt.jar;C:\Program Files\Java\jre1.8.0_101\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_101\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_101\lib\jce.jar;C:\Program Files\Java\jre1.8.0_101\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_101\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_101\classes;C:\Users\chaor\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.8.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course2_Functional_Program_Design_in_Scala\follow\target\scala-2.11\classes[0m
+[0m[[0mdebug[0m] [0mScala compilation took 2.622245892 s[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m

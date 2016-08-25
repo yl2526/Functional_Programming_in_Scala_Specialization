@@ -1,0 +1,46 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set(C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\rational.scala)[0m
+[0m[[0mdebug[0m] [0m	added: Set(C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\List.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\rational.scala, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\List.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\rational.scala, C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\List.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (2) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\target\scala-2.11\classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.8[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.8[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 637db9d, interfacing (CompilerInterface) with Scala compiler version 2.11.8[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	C:\Program Files\Java\jre1.8.0_92\lib\resources.jar;C:\Program Files\Java\jre1.8.0_92\lib\rt.jar;C:\Program Files\Java\jre1.8.0_92\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_92\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_92\lib\jce.jar;C:\Program Files\Java\jre1.8.0_92\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_92\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_92\classes;C:\Users\chaor\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.8.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\target\scala-2.11\classes[0m
+[0m[[0mdebug[0m] [0mScala compilation took 0.261350217 s[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\List.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\List.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\List.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\List.scala)[0m
+[0m[[0mdebug[0m] [0mThe C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\List.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, Nil, wait, $asInstanceOf, equals, head, asInstanceOf, synchronized, $isInstanceOf, tail, Cons, notifyAll, isInstanceOf, <init>, ==, clone, toString, !=, getClass, List, isEmpty, ne, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\rational.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\rational.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\rational.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\rational.scala)[0m
+[0m[[0mdebug[0m] [0mThe C:\Users\chaor\Desktop\Functional_Programming_in_Scala_Specialization\Course1_Functional_Programming_Principles_In_Scala\Follow_Lecture\src\main\scala\Week3\rational.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, wait, $asInstanceOf, less, equals, asInstanceOf, unary_-, synchronized, $isInstanceOf, numer, notifyAll, -, isInstanceOf, <init>, max, g, ==, clone, toString, denom, +, !=, getClass, Rational, ne, eq, ##, finalize, hashCode, gcd.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
