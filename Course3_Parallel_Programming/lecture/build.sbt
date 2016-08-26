@@ -1,6 +1,8 @@
 name := "lecture"
 
-version := "1.0"
+scalaVersion := "2.11.7"
 
-scalaVersion := "2.11.8"
-    
+scalacOptions ++= Seq("-deprecation")
+
+
+
