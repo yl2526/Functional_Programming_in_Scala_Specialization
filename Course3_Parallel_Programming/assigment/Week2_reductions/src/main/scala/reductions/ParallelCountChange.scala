@@ -46,17 +46,14 @@ object ParallelCountChange {
    *  coins for the specified amount of money.
    */
   def countChange(money: Int, coins: List[Int]): Int = {
-    def numChangeWay(left: Int, changeTrace: List[Int]): Int = {
-      if (left == 0)
-        1
-      else if (left < 0)
-        0
-      else if ((left > 0) && changeTrace.isEmpty)
-        0
-      else
-        numChangeWay(left, changeTrace.tail) + numChangeWay(left - changeTrace.head, changeTrace)
-    }
-    numChangeWay(money, coins)
+    if (money == 0)
+      1
+    else if (money < 0)
+      0
+    else if ((money > 0) && (coins.isEmpty))
+      0
+    else
+      countChange(money, coins.tail) + countChange(money - coins.head, coins)
   }
 
   type Threshold = (Int, List[Int]) => Boolean
