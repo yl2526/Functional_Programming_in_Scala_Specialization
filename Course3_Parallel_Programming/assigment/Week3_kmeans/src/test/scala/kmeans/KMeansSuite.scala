@@ -15,8 +15,13 @@ import KM._
 class KMeansSuite extends FunSuite {
 
   def checkClassify(points: GenSeq[Point], means: GenSeq[Point], expected: GenMap[Point, GenSeq[Point]]) {
-    assert(classify(points, means) == expected,
+    assert(classify(points, means) === expected,
       s"classify($points, $means) should equal to $expected")
+  }
+
+  def checkParClassify(points: GenSeq[Point], means: GenSeq[Point], expected: GenMap[Point, GenSeq[Point]]) {
+    assert(classify(points.par, means.par) == expected,
+      s"classify($points par, $means par) should equal to $expected")
   }
 
   test("'classify should work for empty 'points' and empty 'means'") {
@@ -59,17 +64,30 @@ class KMeansSuite extends FunSuite {
     checkClassify(points, means, expected)
   }
 
-  def checkParClassify(points: GenSeq[Point], means: GenSeq[Point], expected: GenMap[Point, GenSeq[Point]]) {
-    assert(classify(points.par, means.par) == expected,
-      s"classify($points par, $means par) should equal to $expected")
-  }
-
   test("'classify with data parallelism should work for empty 'points' and empty 'means'") {
     val points: GenSeq[Point] = IndexedSeq()
     val means: GenSeq[Point] = IndexedSeq()
     val expected = GenMap[Point,GenSeq[Point]]()
     checkParClassify(points, means, expected)
   }
+
+  test("trial with GenSeq((1, 1, 0), (1, -1, 0), (-1, 1, 0), (-1, -1, 0)) and 'means' == GenSeq((1, 0, 0), (-1, 0, 0))") {
+    val p1 = new Point(1, 1, 0)
+    val p2 = new Point(1, -1, 0)
+    val p3 = new Point(-1, 1, 0)
+    val p4 = new Point(-1, -1, 0)
+    val points: GenSeq[Point] = IndexedSeq(p1, p2, p3, p4)
+    val mean1 = new Point(1, 0, 0)
+    val mean2 = new Point(-1, 0, 0)
+    val means: GenSeq[Point] = IndexedSeq(mean1, mean2)
+    val classified = GenMap((mean1, GenSeq(p3, p2)), (mean2, GenSeq(p3, p4)))
+    println()
+    println(means)
+    println(update(classified, means))
+    println(converged(0.1)(means, update(classified, means)))
+    assert(converged(0.1)(means, update(classified, means)))
+  }
+
 
 }
 
