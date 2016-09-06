@@ -91,7 +91,6 @@ import FloatOps._
   }
 
   test("leaf insert with size 5 and minimumSize of 1e-5") {
-    println()
     val quad = Empty(20f, 30f, 5f)
     val b1 = new Body(1f, 10f, 50f, 0f, 0f) // sw
     val b2 = new Body(2f, 30f, 30f, 0f, 0f) // ne
@@ -140,6 +139,18 @@ import FloatOps._
 
     assert(body.xspeed ~= 12.587037f)
     assert(body.yspeed ~= 0.015557117f)
+  }
+
+  test("Body.updated for Fork at distance") {
+    val b1 = new Body(1f, 10f, 40f, 0f, 0f) // sw
+    val b2 = new Body(2f, 30f, 20f, 0f, 0f) // ne
+    val inserted = Empty(20f, 30f, 100f).insert(b1).insert(b2)
+
+    val b3 = new Body(1f, 20f, 30f, 0f, 0f) // ne
+
+    val body = b3.updated(inserted)
+
+    assert(body.xspeed ~= -body.yspeed)
   }
 
   // test cases for sector matrix
