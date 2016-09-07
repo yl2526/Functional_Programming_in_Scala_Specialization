@@ -90,27 +90,27 @@ import FloatOps._
     }
   }
 
-  test("leaf insert with size 5 and minimumSize of 1e-5") {
-    val quad = Empty(20f, 30f, 5f)
+  test("leaf insert with size 20 and minimumSize of 1e-5") {
+    val quad = Empty(20f, 30f, 20f)
     val b1 = new Body(1f, 10f, 50f, 0f, 0f) // sw
-    val b2 = new Body(2f, 30f, 30f, 0f, 0f) // ne
+    val b2 = new Body(2f, 30f, 15f, 0f, 0f) // ne
     val inserted = quad.insert(b1).insert(b2)
     inserted match {
       case Fork(nw, ne, sw, se) => {
-        assert(nw.centerX === 10)
-        assert(nw.centerY === 15)
+        assert(nw.centerX === 15)
+        assert(nw.centerY === 25)
         assert(nw.mass === 0)
 
-        assert(ne.centerX === 30)
-        assert(ne.centerY === 15)
+        assert(ne.centerX === 25)
+        assert(ne.centerY === 25)
         assert(ne.mass === 2)
 
-        assert(sw.centerX === 10)
-        assert(sw.centerY === 45)
+        assert(sw.centerX === 15)
+        assert(sw.centerY === 35)
         assert(sw.mass === 1)
 
-        assert(se.centerX === 30)
-        assert(se.centerY === 45)
+        assert(se.centerX === 25)
+        assert(se.centerY === 35)
         assert(se.mass === 0)
       }
       case _ =>
@@ -146,7 +146,7 @@ import FloatOps._
     val b2 = new Body(2f, 30f, 20f, 0f, 0f) // ne
     val inserted = Empty(20f, 30f, 100f).insert(b1).insert(b2)
 
-    val b3 = new Body(1f, 20f, 30f, 0f, 0f) // ne
+    val b3 = new Body(1f, 20f, 30f, 0f, 0f) // center
 
     val body = b3.updated(inserted)
 
@@ -155,7 +155,7 @@ import FloatOps._
 
   // test cases for sector matrix
 
-  ignore("'SectorMatrix.+=' should add a body at (25,47) to the correct bucket of a sector matrix of size 96") {
+  test("'SectorMatrix.+=' should add a body at (25,47) to the correct bucket of a sector matrix of size 96") {
     val body = new Body(5, 25, 47, 0.1f, 0.1f)
     val boundaries = new Boundaries()
     boundaries.minX = 1
