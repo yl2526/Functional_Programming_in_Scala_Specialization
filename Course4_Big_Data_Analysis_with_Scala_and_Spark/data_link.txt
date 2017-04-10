@@ -1,0 +1,6 @@
+http://alaska.epfl.ch/~dockermoocs/bigdata/wikipedia.dat -> src/main/resources/wikipedia
+
+http://alaska.epfl.ch/~dockermoocs/bigdata/stackoverflow.csv -> src/main/resources/stackoverflow
+
+
+http://alaska.epfl.ch/~dockermoocs/bigdata/atussum.csv -> src/main/resources/timeusage/ 
