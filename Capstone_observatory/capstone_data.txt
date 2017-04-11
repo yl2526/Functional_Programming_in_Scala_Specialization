@@ -1,0 +1,4 @@
+http://alaska.epfl.ch/files/scala-capstone-data.zip
+
+explination:
+https://www.coursera.org/learn/scala-capstone/supplement/F7XVk/data-extraction
