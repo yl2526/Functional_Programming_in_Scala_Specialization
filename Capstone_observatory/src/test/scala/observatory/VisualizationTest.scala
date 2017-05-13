@@ -69,11 +69,11 @@ class VisualizationTest extends FunSuite with Checkers {
     assert(indexToLocation(90*360 + 180) === Location(0, 0))
   }
 
-  ignore("try make a image"){
+  test("try make a image"){
     import Extraction._
     val temperatures = locationYearlyAverageRecords(locateTemperatures(2000, "/stations.csv", "/2000.csv"))
-    val myImage = visualize(temperatures, Parameter.colorBar)
-    val _ = myImage.output(new java.io.File("target/raw_data_vis.png"))
+    val picture = new java.io.File("C:\\Users\\chaor\\Desktop\\git repos\\Functional_Programming_in_Scala_Specialization\\Capstone_observatory\\src\\main\\target\\raw_data_vis.png")
+    val _ = visualize(temperatures, Parameter.colorBar).output(picture)
   }
 
 }

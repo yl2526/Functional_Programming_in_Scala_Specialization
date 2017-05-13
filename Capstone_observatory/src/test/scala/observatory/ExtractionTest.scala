@@ -9,10 +9,6 @@ import Extraction._
 
 @RunWith(classOf[JUnitRunner])
 class ExtractionTest extends FunSuite {
-
-  val testResourcesFolder = "C:\\Users\\chaor\\Desktop\\git repos\\Functional_Programming_in_Scala_Specialization\\Capstone_observatory\\src\\main\\resources\\"
-  println("original")
-  println(testResourcesFolder)
   val testStationsFile: String = "/station_test.csv"
   val testTemperaturesFile: String = "/1000_test.csv"
   def roundAt5(n: Double): Double = { (math.round(n) * 100000) / 100000 }
