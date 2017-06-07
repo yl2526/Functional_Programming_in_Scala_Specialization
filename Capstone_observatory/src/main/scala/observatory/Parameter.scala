@@ -5,7 +5,7 @@ package observatory
   */
 object Parameter {
   val interpolationPower: Int = 2
-  val alpha: Int = 125
+  val alpha: Int = 127
   val colorBar: Seq[(Double, Color)] = Seq(
     (60, Color(red = 255, green = 255, blue = 255)),
     (32, Color(red = 255, green = 0, blue = 0)),

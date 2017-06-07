@@ -8,10 +8,9 @@ import math._
   */
 object Visualization {
   def greatCircleDistance(a: Location, b: Location): Double = {
-    def radians(deg: Double) = deg / 180 * Pi
     val r = 6371
-    val delta = sin(radians(a.lat)) * sin(radians(b.lat)) +
-      cos(radians(a.lat)) * cos(radians(b.lat)) * cos(radians(abs(a.lon - b.lon)))
+    val delta = sin(toRadians(a.lat)) * sin(toRadians(b.lat)) +
+      cos(toRadians(a.lat)) * cos(toRadians(b.lat)) * cos(toRadians(abs(a.lon - b.lon)))
     r * acos(max(min(delta, 1), -1))
   }
 
@@ -64,7 +63,7 @@ object Visualization {
     else interpolateTwoColor(twoColor._2, twoColor._1, value)
   }
 
-  def indexToLocation(index: Int): Location ={
+  def indexToLocation(index: Int): Location = {
     val lat: Double = 90 - index / 360
     val lon: Double = index % 360 - 180
     Location(lat, lon)
