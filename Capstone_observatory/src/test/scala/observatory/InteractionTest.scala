@@ -20,11 +20,11 @@ class InteractionTest extends FunSuite with Checkers {
     assert(roundAf(result.lon) === -180.0)
   }
 
-  ignore("create some tile image"){
+  test("create some tile image"){
     import Extraction._
     val temperatures = locationYearlyAverageRecords(locateTemperatures(2000, "/stations.csv", "/2000.csv"))
-    val picture = new java.io.File("C:\\Users\\chaor\\Desktop\\git repos\\Functional_Programming_in_Scala_Specialization\\Capstone_observatory\\src\\main\\target\\raw_data_vis.png")
-    val _ = tile(temperatures, Parameter.colorBar, 1, 0, 0).output(picture)
+    val picture = new java.io.File("C:\\Users\\chaor\\Desktop\\git repos\\Functional_Programming_in_Scala_Specialization\\Capstone_observatory\\src\\main\\target\\0-1.png")
+    val _ = tile(temperatures, Parameter.colorBar, 1, 0, 1).output(picture)
   }
 
 }
