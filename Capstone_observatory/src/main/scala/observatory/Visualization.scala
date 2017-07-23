@@ -20,7 +20,8 @@ object Visualization {
     * @return The predicted temperature at `location`
     */
   def predictTemperature(temperatures: Iterable[(Location, Double)], location: Location): Double = {
-    val distanceTemperatures = temperatures.par.map{case (loc, temp) => (greatCircleDistance(loc, location), temp)}
+    val temps = if (temperatures.size <= 500) temperatures else temperatures.par
+    val distanceTemperatures = temps.map{case (loc, temp) => (greatCircleDistance(loc, location), temp)}
     val cloestDistance = distanceTemperatures.minBy(_._1)
     if (cloestDistance._1 <= 1) cloestDistance._2
     else {
