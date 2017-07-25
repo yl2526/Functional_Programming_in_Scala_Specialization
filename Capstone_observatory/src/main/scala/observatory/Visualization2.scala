@@ -1,6 +1,10 @@
 package observatory
 
 import com.sksamuel.scrimage.{Image, Pixel}
+import math._
+
+import Interaction.{tileLocation, subtileLocations}
+import Visualization.interpolateColor
 
 /**
   * 5th milestone: value-added information visualization
@@ -25,7 +29,10 @@ object Visualization2 {
     d10: Double,
     d11: Double
   ): Double = {
-    ???
+    def interpolate(left: Double, right: Double, pos: Double): Double = {
+      (1.0 - pos) * left + pos * right
+    }
+    interpolate(interpolate(d00, d10, x), interpolate(d01, d11, x), y)
   }
 
   /**
@@ -43,7 +50,26 @@ object Visualization2 {
     x: Int,
     y: Int
   ): Image = {
-    ???
+    val tile = tileLocation(zoom, x, y)
+    val n: Double = pow(2, zoom)
+    val xRange = 360.0 / n
+    val yRange = 180.0 / n
+
+    val pixels: Array[Pixel] = subtileLocations(zoom, x, y).par.map({loc =>
+      val lat = ceil(loc.lat).toInt // the point is at top left
+      val lon = loc.lon.toInt
+      val temp = bilinearInterpolation(
+        loc.lon - lon,
+        lat - loc.lat,
+        grid(lat, lon),
+        grid(lat - 1, lon), // the anchor point is at top
+        grid(lat, lon + 1),
+        grid(lat - 1, lon + 1))
+      val color = interpolateColor(colors, temp)
+
+      Pixel(color.red, color.green, color.blue, Parameter.alpha)
+    }).toArray
+    Image(w=256, h=256, pixels)
   }
 
 }
