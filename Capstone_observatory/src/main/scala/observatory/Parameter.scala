@@ -17,4 +17,13 @@ object Parameter {
     (-60, Color(red = 0, green = 0, blue = 0))
   )
 
+  val devColorBar: Seq[(Double, Color)] = Seq(
+    (7, Color(red = 0, green = 0, blue = 0)),
+    (4, Color(red = 255, green = 0, blue = 0)),
+    (2, Color(red = 255, green = 255, blue = 0)),
+    (0, Color(red = 255, green = 255, blue = 255)),
+    (-2, Color(red = 0, green = 255, blue = 255)),
+    (-7, Color(red = 0, green = 0, blue = 255))
+  )
+
 }
